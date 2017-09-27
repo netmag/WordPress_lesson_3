@@ -5,8 +5,12 @@
 body
   font-size: 62.5%
   font-family: 'Arial', sans-serif
+  background-color: #e9e9e9
   background: url("img/Background.jpg") repeat
   border-top: 5px solid #d7a229
+  color: #333
+  font-weight: 400
+  line-height: 1.7
 
 img
   border: none
@@ -16,10 +20,23 @@ a
   outline: none
 
 .container
+  background-color: #FFF
+  width: 1000px
+  margin: 0 auto
 
 // HEADER
 
 .header
+  width: 1000px
+  padding: 59px 31px 0 31px
+  overflow: hidden
+  background: url("img/header_bg.jpg") repeat
+  background: -moz-linear-gradient(top, rgba(255,255,255,0.2) 0%, rgba(0,0,0,0.2) 100%), url("img/header_bg.jpg") repeat
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,0.2)), color-stop(100%,rgba(0,0,0,0.2))), url("img/header_bg.jpg") repeat
+  background: -webkit-linear-gradient(top, rgba(255,255,255,0.2) 0%,rgba(0,0,0,0.2) 100%), url("img/header_bg.jpg") repeat
+  background: -o-linear-gradient(top, rgba(255,255,255,0.2) 0%,rgba(0,0,0,0.2) 100%), url("img/header_bg.jpg") repeat
+  background: -ms-linear-gradient(top, rgba(255,255,255,0.2) 0%,rgba(0,0,0,0.2) 100%), url("img/header_bg.jpg") repeat
+  background: linear-gradient(to bottom, rgba(255,255,255,0.2) 0%,rgba(0,0,0,0.2) 100%), url("img/header_bg.jpg") repeat
   &_logo
     font-family: CocaColaii
     color: #3b3f41
@@ -28,3 +45,22 @@ a
     line-height: 0.333
     text-align: left
     text-shadow: 0px 3px 0px rgba(255, 255, 255, 0.4)
+    float: left
+  &_contact
+    float: right
+    margin-bottom: 10px
+    img
+      vertical-align: baseline
+      margin-right: 5px
+    span
+      padding: 0 10px 0 10px
+  &_social
+    clear: right
+    float: right
+    a
+      margin-left: 5px
+.header_contact, a
+  font-family: DroidSerif
+  color:  #d4d4d4
+  font-size: 1.2em
+  font-weight: 700
