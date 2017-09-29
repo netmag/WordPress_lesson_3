@@ -1,0 +1,11 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  font-size: 62.5%;
+  font-family: "Arial", sans-serif;
+  background: url("img/Background.jpg") repeat;
+  border-top: 5px solid #d7a229; }
+
+/*# sourceMappingURL=style.css.map */
