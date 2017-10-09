@@ -25,15 +25,12 @@ a {
   margin: 0 auto; }
 
 .header {
-  width: 1000px;
-  padding: 59px 31px 0 31px;
+  width: 940px;
+  padding: 59px 30px 0 30px;
   overflow: hidden;
   background: url("img/header_bg.jpg") repeat;
-  background: -moz-linear-gradient(top, rgba(255, 255, 255, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%), url("img/header_bg.jpg") repeat;
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(255, 255, 255, 0.2)), color-stop(100%, rgba(0, 0, 0, 0.2))), url("img/header_bg.jpg") repeat;
   background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%), url("img/header_bg.jpg") repeat;
-  background: -o-linear-gradient(top, rgba(255, 255, 255, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%), url("img/header_bg.jpg") repeat;
-  background: -ms-linear-gradient(top, rgba(255, 255, 255, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%), url("img/header_bg.jpg") repeat;
   background: linear-gradient(to bottom, rgba(255, 255, 255, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%), url("img/header_bg.jpg") repeat; }
   .header_logo {
     font-family: CocaColaii;
@@ -73,6 +70,7 @@ a {
   width: 100%;
   margin-top: 43px;
   border-radius: 3px 3px 0 0;
+  background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.1) 0%, rgba(0, 0, 0, 0.1) 100%) #333639;
   background: linear-gradient(to bottom, rgba(255, 255, 255, 0.1) 0%, rgba(0, 0, 0, 0.1) 100%) #333639; }
   .header_menu ul {
     list-style: none; }
@@ -96,6 +94,7 @@ a {
 
 .header_menu-active, li:active {
   background-color: rgba(0, 0, 0, 0.1);
+  background: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.15) 0%, rgba(255, 255, 255, 0.15) 100%);
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.15) 0%, rgba(255, 255, 255, 0.15) 100%);
   border-bottom: 4px solid #d7a229; }
 
@@ -113,6 +112,82 @@ a {
     padding-left: 10px; }
   .search-btn {
     padding-left: 9px; }
+
+.jcarousel-wrapper {
+  position: relative;
+  width: 100%;
+  height: 460px; }
+
+/** Carousel */
+.jcarousel {
+  position: relative;
+  overflow: hidden; }
+  .jcarousel ul {
+    width: 20000em;
+    position: relative;
+    list-style: none;
+    margin: 0;
+    padding: 0; }
+  .jcarousel li {
+    float: left; }
+
+/** Carousel Controls */
+.jcarousel-control-prev, .jcarousel-control-next {
+  position: absolute;
+  top: 200px;
+  text-align: center;
+  color: rgba(74, 74, 74, 0.8);
+  width: 36px;
+  height: 59px;
+  text-decoration: none;
+  font: 135px/30px Arial; }
+
+.jcarousel-control-prev {
+  left: 29px; }
+
+.jcarousel-control-next {
+  right: 29px; }
+
+.jcarousel-control-prev:hover span, .jcarousel-control-next:hover span {
+  display: block; }
+
+.jcarousel-control-prev.inactive, .jcarousel-control-next.inactive {
+  opacity: 0.5;
+  cursor: default; }
+
+/** Carousel Pagination */
+.jcarousel-pagination {
+  position: absolute;
+  bottom: 15px;
+  left: 50%; }
+
+.jcarousel-pagination a {
+  text-decoration: none;
+  display: inline-block;
+  font-size: 11px;
+  line-height: 14px;
+  min-width: 14px;
+  color: transparent;
+  border-radius: 14px;
+  padding: 3px;
+  text-align: center;
+  margin-right: 3px;
+  opacity: 0.75;
+  border-radius: 50%;
+  border-style: solid;
+  border-width: 2px;
+  border-color: white;
+  background-color: rgba(255, 255, 255, 0); }
+
+.jcarousel-pagination a.active {
+  border-radius: 50%;
+  border-style: solid;
+  border-width: 5px;
+  border-color: white;
+  background-clip: content-box;
+  background-image: url("img/2_center.jpg");
+  background-position: 2px;
+  color: transparent; }
 
 ::-webkit-input-placeholder {
   opacity: 0.6;
