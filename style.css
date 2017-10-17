@@ -27,11 +27,8 @@ a {
   padding: 59px 30px 0 30px;
   overflow: hidden;
   background: url("img/header_bg.jpg") repeat;
-  background: -moz-linear-gradient(top, rgba(255, 255, 255, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%), url("img/header_bg.jpg") repeat;
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(255, 255, 255, 0.2)), color-stop(100%, rgba(0, 0, 0, 0.2))), url("img/header_bg.jpg") repeat;
   background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%), url("img/header_bg.jpg") repeat;
-  background: -o-linear-gradient(top, rgba(255, 255, 255, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%), url("img/header_bg.jpg") repeat;
-  background: -ms-linear-gradient(top, rgba(255, 255, 255, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%), url("img/header_bg.jpg") repeat;
   background: linear-gradient(to bottom, rgba(255, 255, 255, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%), url("img/header_bg.jpg") repeat; }
   .header_logo {
     font-family: CocaColaii;
@@ -71,6 +68,7 @@ a {
   width: 100%;
   margin-top: 43px;
   border-radius: 3px 3px 0 0;
+  background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.1) 0%, rgba(0, 0, 0, 0.1) 100%) #333639;
   background: linear-gradient(to bottom, rgba(255, 255, 255, 0.1) 0%, rgba(0, 0, 0, 0.1) 100%) #333639; }
   .header_menu ul {
     list-style: none; }
@@ -94,6 +92,7 @@ a {
 
 .header_menu-active, li:active {
   background-color: rgba(0, 0, 0, 0.1);
+  background: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.15) 0%, rgba(255, 255, 255, 0.15) 100%);
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.15) 0%, rgba(255, 255, 255, 0.15) 100%);
   border-bottom: 4px solid #d7a229; }
 
@@ -217,9 +216,7 @@ a {
   .slide_content .button {
     border-radius: 3px;
     background: -webkit-linear-gradient(90deg, #d7a229 0%, #fcd47a 100%);
-    background: -moz-linear-gradient(90deg, #d7a229 0%, #fcd47a 100%);
-    background: -o-linear-gradient(90deg, #d7a229 0%, #fcd47a 100%);
-    background: -ms-linear-gradient(90deg, #d7a229 0%, #fcd47a 100%);
+    background: -webkit-linear-gradient(bottom, #d7a229 0%, #fcd47a 100%);
     background: linear-gradient(0deg, #d7a229 0%, #fcd47a 100%);
     box-shadow: 0px 2px 0px 0px #a9790c;
     width: 173px;
@@ -260,8 +257,12 @@ a {
     height: 200px;
     background: white;
     padding: 48px 30px 0 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between; }
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
     .teaser_collumns .collumn {
       width: 212px;
       height: 95px;
@@ -295,7 +296,8 @@ a {
   .latest_work img {
     width: 100%;
     height: 15px;
-    object-fit: cover; }
+    -o-object-fit: cover;
+       object-fit: cover; }
   .latest_work span {
     font-family: "Droid Serif", serif;
     color: #333333;
@@ -322,15 +324,87 @@ a {
   .latest_work .work_collumns {
     background: white;
     height: 213px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between; }
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 50px 30px 0 30px; }
     .latest_work .work_collumns .w_collumn {
-      width: 209px;
-      height: 209px; }
+      width: 213px;
+      height: 213px;
+      background: url("img/bg_main.png");
+      position: relative; }
+      .latest_work .work_collumns .w_collumn img {
+        width: 209px;
+        height: 209px; }
+      .latest_work .work_collumns .w_collumn .w_collumn_mask {
+        border: 5px solid rgba(90, 90, 90, 0.7);
+        background: rgba(255, 255, 255, 0.7);
+        width: 199px;
+        height: 199px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0; }
+        .latest_work .work_collumns .w_collumn .w_collumn_mask img {
+          width: 16px;
+          height: 19px;
+          position: absolute;
+          top: 70px;
+          left: 94px; }
+        .latest_work .work_collumns .w_collumn .w_collumn_mask p {
+          position: absolute;
+          top: 100px;
+          left: 0;
+          font-family: "Droid Serif", serif;
+          color: #242424;
+          font-size: 11.85px;
+          font-weight: 400;
+          line-height: 1.857;
+          text-align: center;
+          width: 100%; }
+          .latest_work .work_collumns .w_collumn .w_collumn_mask p a {
+            font-family: PTSans;
+            color: #545454;
+            font-size: 10px;
+            font-weight: 400;
+            line-height: 22px;
+            text-align: center; }
+            .latest_work .work_collumns .w_collumn .w_collumn_mask p a:hover {
+              color: #000000;
+              font-weight: 700; }
+        .latest_work .work_collumns .w_collumn .w_collumn_mask:hover {
+          opacity: 1; }
 
 .capture {
   position: relative;
   padding: 0 30px 0 30px; }
+
+.our_block {
+  height: 284px;
+  background: white;
+  float: left;
+  overflow: hidden;
+  width: 940px;
+  padding: 50px 30px 0 30px; }
+
+.choose {
+  height: 284px;
+  background: white;
+  float: left;
+  overflow: hidden;
+  width: 452px; }
+  .choose .capture {
+    padding: 0; }
+
+.service {
+  height: 284px;
+  background: white;
+  float: right;
+  overflow: hidden;
+  width: 452px; }
 
 ::-webkit-input-placeholder {
   opacity: 0.6;
