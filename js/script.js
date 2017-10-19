@@ -1,5 +1,6 @@
 jQuery(document).ready(function() {
 
+// CAROUSEL ////////////////////////////////
   $(function() {
     $('.jcarousel').jcarousel();
 
@@ -34,6 +35,16 @@ jQuery(document).ready(function() {
     })
     .jcarouselPagination();
   });
+
+// ACCORDIONE & TABS /////////////////////////
+
+  $( function() {
+    $( "#accordion" ).accordion();
+  });
+
+  $( function() {
+    $( "#tabs" ).tabs();
+  } );
 
 });
 

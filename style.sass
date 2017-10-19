@@ -288,22 +288,6 @@ a
   float: left
   overflow: hidden
   width: 100%
-  img
-    width: 100%
-    height: 15px
-    object-fit: cover
-  span
-    font-family: 'Droid Serif', serif
-    color: #333333
-    font-size: 24px
-    line-height: 24px
-    font-weight: 400
-    text-align: center
-    background: white
-    padding: 0 20px
-    position: absolute
-    left: 390px
-    top: 0
   .link
     font-family: PTSans_Italic
     color: #d7a229
@@ -328,12 +312,12 @@ a
       position: relative
       img
         width: 209px
-        height: 209px
+        height: 202px
       .w_collumn_mask
         border: 5px solid rgba(90, 90, 90, .7)
         background: rgba(255, 255, 255, .7)
         width: 199px
-        height: 199px
+        height: 193px
         position: absolute
         top: 0
         left: 0
@@ -370,10 +354,27 @@ a
 .capture
   position: relative
   padding: 0 30px 0 30px
+  img
+    width: 100%
+    height: 15px
+    object-fit: cover
+  span
+    font-family: 'Droid Serif', serif
+    color: #333333
+    font-size: 24px
+    line-height: 24px
+    font-weight: 400
+    text-align: center
+    background: white
+    padding: 0 20px
+    position: absolute
+    left: 50%
+    margin-left: -125px
+    top: 0
 
 // OUR BLOCK ///////////////////////////////////
 .our_block
-  height: 284px
+  // height: 284px
   background: white
   float: left
   overflow: hidden
@@ -382,20 +383,67 @@ a
 
 // choose  ////////////////////////////////////
 .choose
-  height: 284px
+  // height: 284px
   background: white
   float: left
   overflow: hidden
   width: 452px
+  transition: all 0.5s
   .capture
     padding: 0
+    margin-bottom: 45px
+    span
+      margin-left: -112px
+  &_line
+    width: 100%
+    .choose_capture
+      padding: 0 0 0 1px
+      font-family: 'Droid Serif', serif
+      color:  #333333
+      font-size: 14px
+      font-weight: 400
+      text-align: left
+      position: relative
+      i
+        color: #c2c2c2
+        padding-right: 18px
+      span
+        position: absolute
+    p
+      width: 400px
+      height: 80px
+      margin-left: 36px
+      overflow: hidden
+      font-family: PTSans
+      color:  #333333
+      font-size: 13px
+      font-weight: 400
+      line-height: 21px
+      text-align: justify
+      padding-top: 16px
+      display: none
+    hr
+      background-color: #c2c2c2
+      width: 456px
+      margin: 12px 0 12px 0
+.fa-1-5x
+  font-size: 1.5em
+
+
+
   // service  ////////////////////////////////////
 .service
-  height: 284px
+  // height: 284px
   background: white
   float: right
   overflow: hidden
-  width: 452px
+  width: 456px
+  .capture
+    padding: 0
+    margin-bottom: 45px
+    span
+      margin-left: -94px
+
 
 
 // PLACEHOLDER
