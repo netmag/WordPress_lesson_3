@@ -23,7 +23,6 @@ a
   margin: 0 auto
 
 // HEADER ///////////////////////////////////////////
-
 .header
   width: 940px
   padding: 59px 30px 0 30px
@@ -111,7 +110,6 @@ a
     padding-left: 9px
 
 // SLIDER ///////////////////////////////////////
-
 .jcarousel-wrapper
   position: relative
   width: 100%
@@ -374,16 +372,14 @@ a
 
 // OUR BLOCK ///////////////////////////////////
 .our_block
-  // height: 284px
   background: white
   float: left
   overflow: hidden
   width: 940px
-  padding: 50px 30px 0 30px
+  padding: 50px 30px 60px 30px
 
 // choose  ////////////////////////////////////
 .choose
-  // height: 284px
   background: white
   float: left
   overflow: hidden
@@ -396,44 +392,21 @@ a
       margin-left: -112px
   &_line
     width: 100%
-    .choose_capture
-      padding: 0 0 0 1px
-      font-family: 'Droid Serif', serif
-      color:  #333333
-      font-size: 14px
-      font-weight: 400
-      text-align: left
-      position: relative
-      i
-        color: #c2c2c2
-        padding-right: 18px
-      span
-        position: absolute
-    p
-      width: 400px
-      height: 80px
-      margin-left: 36px
-      overflow: hidden
-      font-family: PTSans
-      color:  #333333
-      font-size: 13px
-      font-weight: 400
-      line-height: 21px
-      text-align: justify
-      padding-top: 16px
-      display: none
-    hr
-      background-color: #c2c2c2
-      width: 456px
-      margin: 12px 0 12px 0
 .fa-1-5x
   font-size: 1.5em
-
-
+.ui-state-focus
+  outline: none
+.ui-accordion-header
+  border-bottom: 1px solid gray
+.ui-accordion-header-active
+  border-bottom: none
+.ui-accordion-content p
+  display: block
+  height: 90px
+  overflow: hidden
 
   // service  ////////////////////////////////////
 .service
-  // height: 284px
   background: white
   float: right
   overflow: hidden
@@ -443,10 +416,83 @@ a
     margin-bottom: 45px
     span
       margin-left: -94px
+.ui-tabs-anchor
+  font-family: 'Droid Serif', serif
+  color:  #363636
+  font-size: 14px
+  font-weight: 400
+  text-align: left
+.ui-tabs-tab
+  background: linear-gradient(0deg, #cfcfcf 0%, #e6e6e6 52%, #f5f5f5 100%)
+  box-shadow: 0px 1px 0px 0px #c2c2c2
+  &:hover
+    background: linear-gradient(0deg, #dfdfdf 0%, #f8f8f8 52%, #ffffff 100%)
+.ui-tabs .ui-tabs-nav li.ui-tabs-active
+  background: none
+  box-shadow: none
+.tab_txt p
+  font-family: PTSans
+  color: #333333
+  font-size: 13px
+  font-weight: 400
+  line-height: 22px
+  text-align: justify
+  display: inline-block
+  width: 288px
+  height: 130px
+  float: left
+  overflow: hidden
+.tab_img
+  width: 95px
+  height: 124px
+  background: url("img/bg_main.png")
+  float: right
+  overflow: hidden
 
+// FOOTER ///////////////////////////////////
+.footer
+  width: 100%
+  height: 102px
+  float: left
+  background: white url("img/bg_main.png")
+.footer_line-top
+  width: 100%
+  height: 19px
+  background: white
+  margin-top: 11px
+  border-top: 6px solid #d7a229
+.footer_txt
+  margin-top: 24px
+.footer_txt-left
+  font-family: Georgia
+  color: #707070
+  font-size: 12px
+  font-weight: 400
+  line-height: 22px
+  text-align: left
+  display: inline-block
+  float: left
+  margin-left: 30px
+.footer_menu
+  margin-right: 30px
+  float: right
+  width: 250px
+  ul
+    list-style: none
+    li
+      float: left
+      a
+        font-family: Georgia
+        color: #707070
+        font-size: 12px
+        font-weight: 400
+        line-height: 22px
+        text-align: justify
+        padding: 2px 10px 2px 10px
+.border-right
+  border-right: 1px solid #bebebe
 
-
-// PLACEHOLDER
+// PLACEHOLDER ////////////////////////////////
 ::-webkit-input-placeholder
   opacity: .6
   padding-left: 10px
