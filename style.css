@@ -88,7 +88,7 @@ a {
         font-weight: 700;
         text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.7); }
       .header_menu ul li:hover {
-        border-bottom: 4px solid rgba(215, 162, 41, 0.7); }
+        border-bottom: 4px solid #d7a229; }
     .header_menu ul li:last-child {
       border-right: none; }
 
@@ -422,7 +422,7 @@ main {
   background: white;
   float: right;
   overflow: hidden;
-  width: 456px; }
+  width: 465px; }
   .service .capture {
     padding: 0;
     margin-bottom: 45px; }
@@ -432,7 +432,7 @@ main {
 .ui-tabs-anchor {
   font-family: "Droid Serif", serif;
   color: #363636;
-  font-size: 14px;
+  font-size: 14.49px;
   font-weight: 400;
   text-align: left; }
 
