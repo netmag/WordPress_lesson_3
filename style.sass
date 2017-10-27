@@ -109,6 +109,9 @@ a
   &-btn
     padding-left: 9px
 
+main 
+  background-color: white
+
 // SLIDER ///////////////////////////////////////
 .jcarousel-wrapper
   position: relative
@@ -476,7 +479,7 @@ a
 .footer_menu
   margin-right: 30px
   float: right
-  width: 250px
+  width: 253px
   ul
     list-style: none
     li
@@ -493,7 +496,7 @@ a
   border-right: 1px solid #bebebe
 
 // ABOUT US /////////////////////////////////////////////////////
-.about_main_capture
+.main_capture
   width: 942px
   height: 58px
   background: white url(img/bg_main.png)
@@ -615,6 +618,131 @@ a
       &:hover
         opacity: 1
 
+// PORTFOLIO  /////////////////////////////////
+
+  // menu ///////////////
+.main_menu
+  height: 40px
+  border-bottom: 5px solid
+  margin: 50px 30px 50px
+  border-image: url("img/bg_main.png") 5 0 stretch
+  background-color: white
+  border-top: 5px solid
+  ul
+    list-style: none
+    width: 625px
+    display: flex
+    justify-content: space-around
+    li 
+      display: inline-block
+      a 
+        font-family: PTSans
+        color: #333333
+        font-size: 15px
+        font-weight: 400
+        line-height: 22px
+        text-align: center
+        padding: 9px 19px 0
+        display: inline-block
+        height: 31px
+      &:hover
+        border-bottom: 5px solid rgba(215, 162, 41, 1)
+    .main_menu-active
+      border-bottom: 5px solid rgba(215, 162, 41, 1)
+      a
+        color: rgba(215, 162, 41, 1)
+
+  // section /////////////////
+.our_section
+  border-bottom: 5px solid
+  margin: 30px 30px
+  border-image: url("img/bg_main.png") 5 0 stretch
+  background-color: white
+  height: 278px
+  .section_img
+    float: left
+  .section_txt
+    float: right
+    width: 372px
+    padding-top: 10px
+    .section_cap
+      font-family: 'Droid Serif', serif
+      color: #363636
+      font-size: 16px
+      font-weight: 400
+      text-align: left
+      &-min
+        font-family: PTSans_Italic
+        color: #545454
+        font-size: 12px
+        font-weight: 400
+        line-height: 22px
+        text-align: left
+    .section_text
+      font-family: PTSans
+      color: #333333
+      font-size: 13px
+      font-weight: 400
+      line-height: 22px
+      text-align: justify
+      display: inline-block
+      height: 105px
+      overflow: hidden
+      margin-top: 25px
+    .section_btn
+      border-radius: 15px
+      background: linear-gradient(0deg, #d7a229 0%, #fcd47a 100%)
+      box-shadow: 0px 2px 0px 0px #a9790c
+      width: 102px
+      height: 28px
+      margin-top: 25px
+      a
+        display: inline-block
+        font-family: 'Droid Serif', serif
+        color:  #6f520f
+        font-size: 12px
+        font-weight: 700
+        line-height: 12px
+        text-align: center
+        text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.26)
+        padding: 7px 18px 7px 18px
+      &:hover
+        background: linear-gradient(0deg, #fcd47a 0%, #d7a229 100%)
+        box-shadow: 0px 2px 0px 0px #a9790c
+      &:active
+        box-shadow: 0px 1px 0px 0px #a9790c
+        margin-top: 26px
+
+  // pagination  /////////////////
+.pagination
+  height: 92px
+  background-color: #FFF  
+  margin: 0 30px
+  &_menu
+    float: right
+    display: flex
+    justify-content: space-between
+    width: 82px
+    height: 27px  
+    list-style: none 
+    padding-top: 19px
+    li 
+      height: 24px 
+      width: 22px
+      font-family: PTSans
+      color: #363636
+      font-size: 14px
+      font-weight: 700
+      line-height: 22px
+      text-align: center
+      padding-top: 2px
+      &:hover
+        cursor: pointer
+  .pag_menu-active
+    background-color: #d7a229
+    color: white
+    &:hover
+      cursor: default
 
 // PLACEHOLDER ////////////////////////////////
 ::-webkit-input-placeholder
