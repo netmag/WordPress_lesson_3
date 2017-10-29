@@ -109,7 +109,7 @@ a
   &-btn
     padding-left: 9px
 
-main 
+main
   background-color: white
 
 // SLIDER ///////////////////////////////////////
@@ -619,7 +619,6 @@ main
         opacity: 1
 
 // PORTFOLIO  /////////////////////////////////
-
   // menu ///////////////
 .main_menu
   height: 40px
@@ -633,9 +632,9 @@ main
     width: 625px
     display: flex
     justify-content: space-around
-    li 
+    li
       display: inline-block
-      a 
+      a
         font-family: PTSans
         color: #333333
         font-size: 15px
@@ -716,18 +715,18 @@ main
   // pagination  /////////////////
 .pagination
   height: 92px
-  background-color: #FFF  
+  background-color: #FFF
   margin: 0 30px
   &_menu
     float: right
     display: flex
     justify-content: space-between
     width: 82px
-    height: 27px  
-    list-style: none 
+    height: 27px
+    list-style: none
     padding-top: 19px
-    li 
-      height: 24px 
+    li
+      height: 24px
       width: 22px
       font-family: PTSans
       color: #363636
@@ -743,6 +742,100 @@ main
     color: white
     &:hover
       cursor: default
+
+// PORTFOLIO SINGLE ///////////////////////////
+  // portfolio slider ///////////////
+.portfolio_slider
+  margin-top: 40px
+  height: 460px
+  background: white url(img/bg_main.png)
+  margin-bottom: 50px
+  .jcarousel-wrapper
+    width: 941px
+    height: 399px
+    margin: 30px 0 0 30px
+  .shadow_slider
+    margin-left: 50px
+
+  // portfolio description ////////////////
+.portfolio_desc
+  height: 430px
+  margin: 0 30px
+  overflow: hidden
+  margin-bottom: 58px
+  .portfolio_desc-left
+    width: 695px
+    float: left
+  p
+    clear: both
+    font-family: PTSans
+    color: #333333
+    font-size: 13px
+    font-weight: 400
+    line-height: 22px
+    text-align: left
+    margin: 22px 0
+  .portfolio_desc-right
+    width: 211px
+    float: right
+    .skils
+      margin-top: 9px
+      .desc_line
+        background: white url(img/bg_main.png)
+        line-height: 10px
+        margin-bottom: 28px
+        span
+          font-family: 'Droid Serif', serif
+          color:  #333333
+          font-size: 16px
+          font-weight: 400
+          text-align: left
+          background: white
+          padding-right: 20px
+      ul
+        font-family: PTSans
+        color: #333333
+        font-size: 13px
+        font-weight: 400
+        line-height: 22px
+        text-align: left
+        margin-bottom: 26px
+        list-style: none
+        li
+          a
+            font-family: PTSans_Italic
+            font-size: 13px
+            line-height: 22px
+            text-align: left
+            color: #333333
+            &:hover
+              color: #d7a229
+.desc_cap
+  margin-bottom: 22px
+  height: 30px
+  img
+    float: left
+  h3
+    float: left
+    margin: 0 20px
+    font-family: 'Droid Serif', serif
+    color: #333333
+    font-size: 16px
+    font-weight: 400
+    text-align: left
+  .desc_line
+    background: white url(img/bg_main.png)
+    height: 10px
+    width: 488px
+    float: left
+    margin-top: 10px
+.rel_proj
+  float: none
+  height: 340px
+  .rel_proj_block
+    background: white url(img/bg_main.png)
+    width: 214px
+    height: 214px
 
 // PLACEHOLDER ////////////////////////////////
 ::-webkit-input-placeholder
